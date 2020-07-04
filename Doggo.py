@@ -1,13 +1,9 @@
 import dog
 import time
 import os
-import win10toast
-
-toaster = win10toast.ToastNotifier()
 
 while True:
-    dog.getDog(directory='/users/lenovo/Desktop', filename='dog')
-    print("Woof! Woof!")
-    toaster.show_toast('Python', "There's a new doggo pic!", duration = 15)
+    dog.getDog(directory='/users/<USER>/lenovo/Desktop', filename='dog')
+    print("How about a break? Here's a new doggo pic! V◕ฺω◕ฺV")
     time.sleep(2700)
-    os.remove("dog.jpg")
+    os.remove("/users/<USER>/Desktop/dog.jpg")
